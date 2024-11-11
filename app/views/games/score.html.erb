@@ -1,0 +1,15 @@
+<h1>Result</h1>
+
+<% if @is_in_grid %>
+  <% if @valid %>
+    <p><%= "Congratulations! #{@answer} is a valid english word" %> </p>
+  <% else %>
+    <p><%= "Sorry but #{@answer} does not seem to be an english word..." %> </p>
+  <% end %>
+<% else %>
+  <p><%= "Sorry but #{@answer} can't be built out of #{@letters.join(', ')}" %> </p>
+<% end %>
+
+<%# <p>You have a score of <%=session[:score]%>
+
+<%= link_to 'New Game', games_new_path %>

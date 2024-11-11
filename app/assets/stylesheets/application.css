@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  background-color: antiquewhite;
+ }
+
+ .letter {
+  background-color: blue;
+  color: white;
+  border-radius: 0.3em;
+  font-size: 2rem;
+  border: 2px solid white;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+ }
+
+ .input-and-button {
+  display: grid;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  grid-template-columns: 9fr 1fr;
+  padding: 0.3rem
+ }
+.input-and-button input {
+  border-radius: 0;
+  border: none;
+}
+ .input-and-button input:last-child {
+  color: red;
+ }
